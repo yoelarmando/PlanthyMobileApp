@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">PlanthyApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="front_login">Front Login</string>
+    <string name="take_photo_image">Take Photo</string>
+    <string name="switch_camera_text">Switch Camera</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="planthy">Planthy</string>
+    <string name="simple_application_to_help_your_plant_by_one_shot">Simple Application to help your plant by one shot</string>
+    <string name="copyright_by_waktumerenung_2022">Copyright by WaktuMerenung 2022</string>
+    <string name="don_t_have_account">Don’t have account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
 </resources>

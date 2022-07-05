@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.planthyapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlanthyApp">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
+            android:name=".screen.home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.splash.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.splash.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +32,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
+            android:name=".screen.camera.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.login.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".screen.main.MainActivity"
+            android:exported="true" />
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
